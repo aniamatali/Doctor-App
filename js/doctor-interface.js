@@ -6,25 +6,28 @@ $(document).ready(function() {
 
   $('#diseasesubmit').click(function() {
     event.preventDefault();
-    $('.list').show();
+    $('#list').show();
     let disease = $('#disease').val();
     healthSearch.disease(disease);
 
     $('#name').val("");
     $('#disease').val("");
     $('#results').empty();
-
+    $('#listtitle').empty();
+    $('#listtitle').text("Results found by keyword");
   });
 
 
   $('#namesubmit').click(function() {
     event.preventDefault();
-    $('.list').show();
+    $('#list').show();
     let name = $('#name').val();
     healthSearch.doctorName(name);
     $('#name').val("");
     $('#disease').val("");
     $('#results').empty();
+    $('#listtitle').empty();
+    $('#listtitle').text("Results found by Doctor");
     });
 
   });
