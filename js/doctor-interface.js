@@ -6,16 +6,17 @@ $(document).ready(function() {
 
   $('#diseasesubmit').click(function() {
     event.preventDefault();
-    $('#list').show();
+    $('#list').addClass("fadein");
 
     let disease = $('#disease').val();
     healthSearch.disease(disease);
-
+    $('#rightoflist').addClass("slideright");
     $('#name').val("");
     $('#disease').val("");
     $('#results').empty();
     $('#listtitle').empty();
     $('#listtitle').text("Results found by keyword");
+
   });
 
 
@@ -30,6 +31,14 @@ $(document).ready(function() {
     $('#results').empty();
     $('#listtitle').empty();
     $('#listtitle').text("Results found by Doctor");
+
     });
+
+  $('.blah').click(function() {
+    event.preventDefault();
+    setInterval(function() {
+      $('#rightoflist').append("<img src='img/mario.jpg' width=100px>")
+    }, 10);
+  });
 
   });

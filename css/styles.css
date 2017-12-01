@@ -1,7 +1,46 @@
+h1 {
+  text-align:center;
+  font-family: 'Poiret One', cursive;
+}
+
+h3 {
+  font-family: 'Oxygen', sans-serif;
+  font-weight:bolder;
+  font-size:20px;
+}
+
 li {
   list-style: none;
 }
 
+li {
+  font-size:15px;
+}
+
+a:hover {
+  font-weight:bold;
+  cursor:pointer;
+}
+
 #list {
-  display:none;
+  margin-right:0px;
+}
+
+h4 {
+  font-size:22px;
+  font-weight:bolder;
+  margin-top:0px;
+}
+
+#rightoflist img {
+  float:left;
+  margin-right:5px;
+}
+
+#rightoflist  {
+  margin-left:0px;
+}
+
+p {
+  font-size:18px;
 }

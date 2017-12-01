@@ -25,8 +25,11 @@ healthSearch.prototype.disease = function(disease) {
     response = response.data;
     if (response.length === 0){
       $('#results').text("Please try a different search...");
+
     } else {
+      $('#rightoflist').append(`<li>Uh oh ${disease}, my friend had that it was baaad..</li>`)
       for(let i = 0; i < response.length; i+=1) {
+
 
         $('#results').append(`<h4>${response[i].profile.first_name} ${response[i].profile.last_name}, ${response[i].profile.title}</h4>`);
         $('#results').append(`<li>Address: ${response[i].practices[0].visit_address.street} <br> ${response[i].practices[0].visit_address.city}, ${response[i].practices[0].visit_address.state}, ${response[i].practices[0].visit_address.zip}</li>`);
@@ -73,7 +76,9 @@ healthSearch.prototype.doctorName = function(name) {
     response = response.data;
     if (response.length === 0){
       $('#results').text("Please try a different search...");
+
     } else {
+      $('#rightoflist').append(`<li>Are you sure you want to go with ${name}?</li>`)
       for(let i = 0; i < response.length; i++) {
 
         $('#results').append(`<h4>${response[i].profile.first_name} ${response[i].profile.last_name}, ${response[i].profile.title}</h4>`);

@@ -6,6 +6,7 @@
   <script src="build/js/vendor.min.js"></script>
   <script type="text/javascript" src="build/js/app.js"></script>
   <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Oxygen|Poiret+One" rel="stylesheet">
 
   <title>EMDB2</title>
 
@@ -19,27 +20,33 @@
   </div>
     <div class="row">
       <div class="col-md-6">
-        <label for="disease">Search by keyword:</label>
-        <input id="disease" type="text">
-        <button class="btn btn-default" type="submit" id="diseasesubmit">Submit</button>
+        <label for="disease">KEYWORD:</label>
+        <input id="disease" type="text" value="Carpal Tunnel">
+        <button class="btn btn-default" type="submit" id="diseasesubmit">Search</button>
+        <br>
       </div>
       <div class="col-md-6">
-        <label for="name">Search by name:</label>
-        <input id="name" type="text">
-        <button class="btn btn-default" type="submit" id="namesubmit">Submit</button>
+        <label for="name">NAME:</label>
+        <input id="name" type="text" value="John Franti M.D.">
+        <button class="btn btn-default" type="submit" id="namesubmit">Search</button>
       </div>
     </div>
     <div class="row">
-      <h3 id="listtitle">Doctor List</h3>
+      <h3 id="listtitle">Welcome</h3>
       <div class="col-md-3" id="list">
       <div id="results">
-
       </div>
       </div>
-      <div class="col-md-9">
+      <div class="col-md-1">
+        <img src="img/doc.jpg" width=90px>
+      </div>
+      <div class="col-md-8" id="rightoflist">
 
+        <h4>Please enter how you would like to search for your future care provider above.</h4>
+        <p>At Epicodus we try our best to make sure that all of our students get the best healthcare
+          possible.</p>
+        <p class="blah">Click here</p>
     </div>
-
   </div>
 </div>
 </body>
