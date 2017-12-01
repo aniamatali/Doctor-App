@@ -7,6 +7,7 @@ $(document).ready(function() {
   $('#diseasesubmit').click(function() {
     event.preventDefault();
     $('#list').show();
+
     let disease = $('#disease').val();
     healthSearch.disease(disease);
 
@@ -21,6 +22,7 @@ $(document).ready(function() {
   $('#namesubmit').click(function() {
     event.preventDefault();
     $('#list').show();
+
     let name = $('#name').val();
     healthSearch.doctorName(name);
     $('#name').val("");
